@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator App</title>
+</head>
+<body>
+    <div class="Calculator">
+        <!-- Numbers display  -->
+        <div class="display">
+         <inpute type="text id="value="0" readonly></inpute>    
+        </div>
+
+        <!-- Button Grid -->
+        <div class="buttons">
+            <!-- first row -->
+             <button class="btn clear" onclick="cleardisplay()">AC</button>
+             <button class="btn operator" onclick="deletelast()">DEL</button>
+             <button class="btn operator" onclick="appendTODisplay('/')">÷</button>
+             <button class="btn operator" onclick="appendTODisplay('*')">×</button>
+
+        <!-- Second Row-->
+         <button class="btn number" onclick="appendTODisplay('7')">7</button>
+         <button class="btn number" onclick="appendTODisplay('8')">8</button>
+         <button class="btn number" onclick="appendTODisplay('9')">9</button>
+         <button class="btn operator" onclick="appendTODisplay('-')">-</button>
+
+         <!-- Third Row-->
+          <button class="btn clear" onclick="appendTODisplay('4')">4</button>
+          <button class="btn clear" onclick="appendTODisplay('5')">5</button>
+          <button class="btn clear" onclick="appendTODisplay('6')">6</button>
+          <button class="btn operator" onclick="appendTODisplay('+')">+</button>
+
+          <!-- Fourth Row-->
+           <button class="btn number" onclick="appendTODisplay('1')">1</button>
+           <button class="btn number" onclick="appendTODisplay('2')">2</button>
+           <button class="btn number" onclick="appendTODisplay('3')">3</button>
+           <button class="btn equals" onclick="appendTODisplay('-')">-</button>
+
+           <!-- Fifth Row-->
+            <button class="btn number zero" onclick="appendTODisplay('0')">0</button>
+            <button class="btn number" onclick="appendTODisplay('.')">.</button>
+        </div>
+    </div>
+      </body>
+</html>
